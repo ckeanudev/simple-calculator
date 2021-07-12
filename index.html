@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="undefined" crossorigin="anonymous">
+    <title>Simple Calculator - JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="calculator-body">
+            <input type="text" name="" id="result" class="calculator-screen" readonly>
+            <div class="calculator-keypad">
+                <div class="calculator-keypad-row">
+
+                    <input type="button" value="%" id="btn-modulus" class="calculator-button btn-mth modulus" onclick="display('%')">
+                    <input type="button" value="CE" id="btn-clearEntry" class="calculator-button btn-mth ce" onclick="clr('ce')">
+                    <input type="button" value="C" id="btn-clear" class="calculator-button btn-mth" onclick="clr('c')">
+                    <input type="button" value="←" id="btn-backspace" class="calculator-button btn-mth icon" onclick="clr('backspace')">
+
+                </div>
+                <div class="calculator-keypad-row">
+
+                    <input type="button" value="7" id="btn-7" class="calculator-button" onclick="display('7')">
+                    <input type="button" value="8" id="btn-8" class="calculator-button" onclick="display('8')">
+                    <input type="button" value="9" id="btn-9" class="calculator-button" onclick="display('9')">
+                    <input type="button" value="+" id="btn-add" class="calculator-button btn-mth" onclick="display('+')">
+
+                </div>
+                <div class="calculator-keypad-row">
+
+                    <input type="button" value="4" id="btn-4" class="calculator-button" onclick="display('4')">
+                    <input type="button" value="5" id="btn-5" class="calculator-button" onclick="display('5')">
+                    <input type="button" value="6" id="btn-6" class="calculator-button" onclick="display('6')">
+                    <input type="button" value="-" id="btn-sub" class="calculator-button btn-mth" onclick="display('-')">
+
+                </div>
+                <div class="calculator-keypad-row">
+
+                    <input type="button" value="1" id="btn-1" class="calculator-button" onclick="display('1')">
+                    <input type="button" value="2" id="btn-2" class="calculator-button" onclick="display('2')">
+                    <input type="button" value="3" id="btn-3" class="calculator-button" onclick="display('3')">
+                    <input type="button" value="/" id="btn-divide" class="calculator-button btn-mth" onclick="display('/')">
+
+                </div>
+                <div class="calculator-keypad-row">
+
+                    <input type="button" value="." id="btn-period" class="calculator-button" onclick="display('.')">
+                    <input type="button" value="0" id="btn-0" class="calculator-button" onclick="display('0')">
+                    <input type="button" value="×" id="btn-multi" class="calculator-button btn-mth" onclick="display('*')">
+                    <input type="button" value="=" id="btn-equal" class="calculator-button btn-mth" onclick="display('=')">
+
+                </div>
+
+            </div>
+            <p>by Ckeanu Richer Q. Locson</p>
+        </div>
+        
+    </div>
+
+    <div class="bg-shadow"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
